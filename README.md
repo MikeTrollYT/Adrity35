@@ -1,2 +1,4 @@
-# adrity35
-Pagina web hecha para Adrity35 con mucho cariño de MikeTroll ♥️
+# Adrity35
+Pagina web para Adrity35
+
+---- Pagina en pruebas ----
