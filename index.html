@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrity35</title>
+    <link rel="icon" href="logo/perfil.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Midnight Sunday';
+            src: url('fuente/Midnight Sunday.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: midnight sunday, sans-serif;
+            background: url('fondo/fondo.jpg') no-repeat center top/cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Capa de degradado a negro a la mitad */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, black 100%);
+            z-index: -1;
+        }
+
+        .profile {
+            margin-top: 50px;
+        }
+
+        .profile img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profile h1 {
+            font-size: 2em;
+        }
+
+        .spotify-card {
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            background: black;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .social-btn img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            filter: brightness(0) invert(1);
+        }
+
+        .social-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(255, 255, 255, 0.4);
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .swiper {
+            width: 60%;
+            max-width: 600px;
+            height: 60vh;
+            max-height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .swiper {
+                width: 90%;
+                height: 40vh;
+                max-height: 300px;
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Midnight Sunday', sans-serif;
+            transition: transform 0.3s;
+            background: none !important;
+            width: auto;
+        }
+
+        .swiper-button-prev { left: 10px; }
+        .swiper-button-next { right: 10px; }
+
+        .swiper-button-prev:hover, .swiper-button-next:hover {
+            transform: scale(1.2);
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            display: none;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white !important;
+            font-size: 2rem;
+        }
+        .swiper-pagination-bullet {
+            background: white !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="logo/perfil.jpg" alt="Perfil">
+        <h1>ADRITY35</h1>
+    </div>
+
+    <div class="spotify-card">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7d6vjWuIGBGBAliC6FUHdN?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.tiktok.com/@adrity__35" class="social-btn twitter"><img src="logo/tiktok.png" alt="TikTok"> TikTok</a>
+        <a href="https://www.youtube.com/@adrity359" class="social-btn youtube"><img src="logo/youtube.png" alt="YouTube"> YouTube</a>
+        <a href="https://www.instagram.com/adrity_35" class="social-btn instagram"><img src="logo/instagram.png" alt="Instagram"> Instagram</a>
+        <a href="https://www.twitch.tv/adrity355" class="social-btn twitch"><img src="logo/twitch.png" alt="Twitch"> Twitch</a>
+    </div>
+    <br>
+    <p style="font-size: 35px;"><--Alcebiche--></p>
+    <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="alcebiche/1.webp" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="alcebiche/2.jpg" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="alcebiche/3.jpg" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="alcebiche/4.jpg" alt="Imagen 4"></div>
+            </div>
+            <div class="swiper-button-prev custom-prev">&lt;</div>
+            <div class="swiper-button-next custom-next">&gt;</div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+        });
+    </script>
+</body>
+</html>
